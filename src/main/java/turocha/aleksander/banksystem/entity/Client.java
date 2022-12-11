@@ -23,4 +23,11 @@ public class Client {
 
     @OneToMany(mappedBy = "client")
     private List<Insurance> insurances = new ArrayList<>();
+
+    public Client(Long id, String firstName, String lastName, int age) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
 }
